@@ -1,6 +1,7 @@
 package dxtr.board;
 
 import dxtr.board.interfaces.Board;
+import dxtr.board.interfaces.Moves;
 import dxtr.board.interfaces.Traversal;
 import dxtr.error.ErrorCode;
 import dxtr.error.PeiceTourException;
@@ -17,7 +18,6 @@ public class WarnsdorffsHeuristic implements Traversal {
 
 	@Override
 	public boolean findTour(int startingX, int startingY) throws PeiceTourException {
-
 		if (!board.isValidMove(startingX, startingY)) {
 			throw new PeiceTourException(ErrorCode.INVALID_STARTING_POSITION);
 		}
@@ -76,7 +76,7 @@ public class WarnsdorffsHeuristic implements Traversal {
 	}
 
 	private boolean move(int currentMove) {
-		
+		System.out.println("Current Move: " +  currentMove);
 		int minimumWarnsdorffDegreeIndex = -1, minimumWarnsdorffDegree = board.getBoardSizeXAxis() + 1;
 		int nextX, nextY;
 		int warnsdorffDegree;
@@ -105,7 +105,6 @@ public class WarnsdorffsHeuristic implements Traversal {
 		startingX = startingX + move.xAxis();
 		startingY = startingY + move.yAxis();
 		board.getBoard()[startingX][startingY] = currentMove;
-		
 		return true;
 	}
 
