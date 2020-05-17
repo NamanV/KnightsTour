@@ -1,4 +1,4 @@
-# KnightsTour
+KnightsTour Problem with custom moves.. Moves are defined in Moves.java file
 
 # BackTracking Solution
 
