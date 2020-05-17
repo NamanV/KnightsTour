@@ -76,7 +76,6 @@ public class WarnsdorffsHeuristic implements Traversal {
 	}
 
 	private boolean move(int currentMove) {
-		System.out.println("Current Move: " +  currentMove);
 		int minimumWarnsdorffDegreeIndex = -1, minimumWarnsdorffDegree = board.getBoardSizeXAxis() + 1;
 		int nextX, nextY;
 		int warnsdorffDegree;
