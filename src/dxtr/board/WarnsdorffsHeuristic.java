@@ -1,7 +1,6 @@
 package dxtr.board;
 
 import dxtr.board.interfaces.Board;
-import dxtr.board.interfaces.Moves;
 import dxtr.board.interfaces.Traversal;
 import dxtr.error.ErrorCode;
 import dxtr.error.PeiceTourException;

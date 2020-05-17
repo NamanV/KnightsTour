@@ -1,4 +1,4 @@
-package dxtr.board.interfaces;
+package dxtr.board;
 
 import java.util.EnumSet;
 
