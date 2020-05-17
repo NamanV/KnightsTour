@@ -1,5 +1,7 @@
 package dxtr.board;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 import dxtr.board.interfaces.Board;
 import dxtr.board.interfaces.Moves;
 import dxtr.board.interfaces.Traversal;
@@ -81,8 +83,11 @@ public class WarnsdorffsHeuristic implements Traversal {
 		int warnsdorffDegree;
 		Moves move;
 
+		int start = ThreadLocalRandom.current().nextInt(1000) % Moves.noOfMoves();
+
 		// Finding a valid move with least possible degree
-		for (int index = 0; index < Moves.noOfMoves(); index++) {
+		for (int i = 0; i < Moves.noOfMoves(); i++) {
+			int index = (start + i) % Moves.noOfMoves();
 			move = Moves.getMoveAtIndex(index);
 			nextX = startingX + move.xAxis();
 			nextY = startingY + move.yAxis();
