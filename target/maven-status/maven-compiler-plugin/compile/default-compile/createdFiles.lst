@@ -1,9 +1,0 @@
-dxtr/board/WarnsdorffsHeuristic.class
-dxtr/error/ErrorCode.class
-dxtr/utility/Constants.class
-dxtr/error/PeiceTourException.class
-dxtr/board/interfaces/Moves.class
-dxtr/board/interfaces/Traversal.class
-dxtr/board/ChessBoard.class
-dxtr/utility/APeiceTour.class
-dxtr/board/interfaces/Board.class
