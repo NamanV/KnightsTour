@@ -5,3 +5,4 @@ KnightsTour Problem with custom moves.. Moves are defined in Moves.java file
 # Warnsdorff Heuristics Solution
 
 	- APeiceTour.java class has main method
+	
